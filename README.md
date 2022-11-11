@@ -55,8 +55,8 @@ The business outcomes we are designing for are as follows:
  ## Project Steps <a name="phases"></a>
  
 <p align="center">
-  <img src="https://github.com/Gutelvam/Azure-Data-Warehouse/blob/main/imgs/steps.png?raw=true">
-  Project steps
+  <img src="https://github.com/Gutelvam/Azure-Data-Warehouse/blob/main/imgs/steps.png?raw=true"> <br>
+  <i>Project steps</i>
 </p>
  
  
