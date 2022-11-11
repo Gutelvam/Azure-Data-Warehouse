@@ -88,9 +88,11 @@ The business outcomes we are designing for are as follows:
 The data used for this project was provided from bike sharing program in Chicago, it's open data that was enhriched with fake data, to complete the ERD diagram below:
 
 <p align=“center”>
-<img src="https://github.com/Gutelvam/Azure-Data-Warehouse/blob/main/imgs/divvy-erd.png?raw=true"> <br>
-<i>Data Diagram</i>
+<img src="https://github.com/Gutelvam/Azure-Data-Warehouse/blob/main/imgs/divvy-erd.png?raw=true"><br>
+<br><i>Data Diagram</i>
 </p>
+
+
 #### Song Dataset  <a name="song"></a>
 
 The first dataset is a subset of real data from the Million Song Dataset. Each file is in JSON format and contains metadata about a song and the artist of that song. The files are partitioned by the first three letters of each song's track ID. For example, here are file paths to two files in this dataset.
