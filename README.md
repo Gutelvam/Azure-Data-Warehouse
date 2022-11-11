@@ -56,13 +56,10 @@ The business outcomes we are designing for are as follows:
  ## Project Steps <a name="phases"></a>
  
 <p align="center">
-  <img src="https://github.com/Gutelvam/Azure-Data-Warehouse/blob/main/imgs/steps.png?raw=true"> 
-  <br>
-</p>
-<p align="center">
-  
+  <img src="https://github.com/Gutelvam/Azure-Data-Warehouse/blob/main/imgs/steps.png?raw=true">  <br>
   <i>Project steps</i>
 </p>
+
  
 **1 - Create your Azure resources**
 - Create an Azure PostgreSQL database
@@ -91,9 +88,9 @@ The business outcomes we are designing for are as follows:
 ## Data <a name="data"></a>
 The data used for this project was provided from bike sharing program in Chicago, it's open data that was enhriched with fake data, to complete the ERD diagram below:
 
-<p align=“center”>
-<img src="https://github.com/Gutelvam/Azure-Data-Warehouse/blob/main/imgs/divvy-erd.png?raw=true"><br>
-<br><i>Data Diagram</i>
+<p align="center">
+  <img src="https://github.com/Gutelvam/Azure-Data-Warehouse/blob/main/imgs/divvy-erd.png?raw=true"><br>
+  <i>Data Diagram</i>
 </p>
 
 
