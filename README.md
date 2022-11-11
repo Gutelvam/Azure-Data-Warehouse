@@ -33,6 +33,7 @@ Design a star schema based on the business outcomes listed below;
 - *Transform the data into the star schema; and finally, view the reports from Analytics.*
 
 The business outcomes we are designing for are as follows:
+
 **Analyze how much time is spent per ride**
 > Based on date and time factors such as day of week and time of day
 
