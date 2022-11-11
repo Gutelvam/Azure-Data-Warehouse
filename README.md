@@ -53,37 +53,6 @@ The business outcomes we are designing for are as follows:
 
 > Based on how many minutes the rider spends on a bike per month
  
- ## Project Steps <a name="phases"></a>
- 
-<p align="center">
-  <img src="https://github.com/Gutelvam/Azure-Data-Warehouse/blob/main/imgs/steps.png?raw=true">  <br>
-  <i>Project steps</i>
-</p>
-
- 
-**1 - Create your Azure resources**
-- Create an Azure PostgreSQL database
-- Create an Azure Synapse workspace
-- Create a Dedicated SQL Pool and database within the Synapse workspace
-
-**2 - Design a Star Schema**
-
-- With a set of business requirements related to the data warehouse. We are being asked to design a star schema using fact and dimension tables.
-
-**3 - Ingest data in PostgreSQL**
-
-- This can be done using the Python script provided for you in [Github: ProjectDataToPostgres.py](https://github.com/udacity/Azure-Data-Warehouse-Project/tree/main/starter), just change authentication credential to connect in database, and run the python script provided and the data will be inserted at postgreSQL created.
-
-**4 - Extract Data from PostgreSQL and ingest into Azure Blob Storage**
-
-- In your Azure Synapse workspace, we have to use the ingest wizard to create a one-time pipeline that ingests the data from PostgreSQL into Azure Blob Storage. This will result in all four tables being represented as text files in Blob Storage, ready for loading into the data warehouse.
-
-**5 - Load Data into External tables in the Data Warehouse**
-- Once in Blob storage, the files will be shown in the data lake node in the Synapse Workspace. From here, we use the script generating function to load the data from blob storage into external staging tables in the data warehouse you created using the Dedicated SQL Pool.
-
-**6 - Transform the Data into Star Schema**
-
-- Last step is to write SQL scripts to transform the data from the staging tables to the final star schema you designed.
 
 ## Data <a name="data"></a>
 The data used for this project was provided from bike sharing program in Chicago, it's open data that was enhriched with fake data, to complete the ERD diagram below:
@@ -117,6 +86,39 @@ The data used for this project was provided from bike sharing program in Chicago
 |   +-- factRide.sql
 +-- README.md
 ```
+
+
+ ## Project Steps <a name="phases"></a>
+ 
+<p align="center">
+  <img src="https://github.com/Gutelvam/Azure-Data-Warehouse/blob/main/imgs/steps.png?raw=true">  <br>
+  <i>Project steps</i>
+</p>
+
+ 
+**1 - Create your Azure resources**
+- Create an Azure PostgreSQL database
+- Create an Azure Synapse workspace
+- Create a Dedicated SQL Pool and database within the Synapse workspace
+
+**2 - Design a Star Schema**
+
+- With a set of business requirements related to the data warehouse. We are being asked to design a star schema using fact and dimension tables.
+
+**3 - Ingest data in PostgreSQL**
+
+- This can be done using the Python script provided for you in [Github: ProjectDataToPostgres.py](https://github.com/udacity/Azure-Data-Warehouse-Project/tree/main/starter), just change authentication credential to connect in database, and run the python script provided and the data will be inserted at postgreSQL created.
+
+**4 - Extract Data from PostgreSQL and ingest into Azure Blob Storage**
+
+- In your Azure Synapse workspace, we have to use the ingest wizard to create a one-time pipeline that ingests the data from PostgreSQL into Azure Blob Storage. This will result in all four tables being represented as text files in Blob Storage, ready for loading into the data warehouse.
+
+**5 - Load Data into External tables in the Data Warehouse**
+- Once in Blob storage, the files will be shown in the data lake node in the Synapse Workspace. From here, we use the script generating function to load the data from blob storage into external staging tables in the data warehouse you created using the Dedicated SQL Pool.
+
+**6 - Transform the Data into Star Schema**
+
+- Last step is to write SQL scripts to transform the data from the staging tables to the final star schema you designed.
 
 
 ## Schema for Song Play Analysis  <a name="schema"></a>
