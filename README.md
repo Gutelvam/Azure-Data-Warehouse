@@ -35,21 +35,29 @@ Design a star schema based on the business outcomes listed below;
 The business outcomes we are designing for are as follows:
 **Analyze how much time is spent per ride**
 > Based on date and time factors such as day of week and time of day
+
 > Based on which station is the starting and / or ending station
+
 > Based on age of the rider at time of the ride
+
 > Based on whether the rider is a member or a casual rider
 
 **Analyze how much money is spent**
 > Per month, quarter, year
+
 > Per member, based on the age of the rider at account start
 
 **EXTRA CREDIT - Analyze how much money is spent per member**
 > Based on how many rides the rider averages per month
+
 > Based on how many minutes the rider spends on a bike per month
  
  ## Project Steps <a name="phases"></a>
  
- 
+<p align="center">
+  <img src="https://github.com/Gutelvam/Azure-Data-Warehouse/blob/main/imgs/steps.png?raw=true">
+  Project steps
+</p>
  
  
 ## Data <a name="data"></a>
