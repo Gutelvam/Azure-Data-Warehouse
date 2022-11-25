@@ -71,6 +71,7 @@ The data used for this project was provided from bike sharing program in Chicago
 +-- imgs
 |   +-- divvy-erd.png
 |   +-- steps.png
+|   +-- star_schema.png
 +-- ingestion_script
 |   +-- ProjectDataToPostgres.py
 |   +-- README.md
@@ -107,7 +108,7 @@ The data used for this project was provided from bike sharing program in Chicago
 
 **3 - Ingest data in PostgreSQL**
 
-- This can be done using the Python script provided for you in [Github: ProjectDataToPostgres.py](https://github.com/udacity/Azure-Data-Warehouse-Project/tree/main/starter), just change authentication credential to connect in database, and run the python script provided and the data will be inserted at postgreSQL created.
+- This can be done using the Python script provided for you in [Github: ProjectDataToPostgres.py](https://github.com/udacity/Azure-Data-Warehouse-Project/tree/main/starter), just change authentication credential to connect in database, and run the python script provided and the data will be inserted at postgreSQL created. command to run script: ```python ProjectDataToPostgres.py```
 
 **4 - Extract Data from PostgreSQL and ingest into Azure Blob Storage**
 
@@ -120,26 +121,6 @@ The data used for this project was provided from bike sharing program in Chicago
 
 - Last step is to write SQL scripts to transform the data from the staging tables to the final star schema you designed.
 
-
-## Schema for Song Play Analysis  <a name="schema"></a>
-Using the song and log datasets, you'll need to create a star schema optimized for queries on song play analysis. This includes the following tables.
-
-##### **Fact Table**  <a name="fact"></a>
-**songplays** - records in log data associated with song plays i.e. records with page NextSong
--   **songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent**
-##### **Dimension Tables**  <a name="dim"></a>
-
-**users** - users in the app
--  ***user_id, first_name, last_name, gender, level***
-
-**songs** - songs in music database
--  ***song_id, title, artist_id, year, duration***
-
-**artists** - artists in music database
-- ***artist_id, name, location, latitude, longitude***
-
-**time** - timestamps of records in songplays broken down into specific units
--  ***start_time, hour, day, week, month, year, weekday***
 
 ## How to  use  <a name="usage"></a>
 #### Requirements  <a name="req"></a>
